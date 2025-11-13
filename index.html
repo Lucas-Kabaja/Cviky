@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta k elite – Street Workout progresy</title>
+    <meta name="description" content="Průvodce progresemi Street Workout cviků pro začátečníky. Naučte se postupné kroky k Muscle Upu, Front Leveru a dalším skillům.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#f97316",
+                        secondary: "#3b82f6",
+                        dark: "#0f172a"
+                    },
+                    fontFamily: {
+                        sans: ['"Segoe UI"', 'Roboto', 'sans-serif'],
+                        heading: ['"Bebas Neue"', 'Impact', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), 
+                        url('https://picsum.photos/1600/900?random=1');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .exercise-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .exercise-card:hover .exercise-title {
+            color: #f97316;
+        }
+        
+        .level-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #334155;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        
+        .level-indicator.active {
+            background-color: #f97316;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-slate-800 shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-heading text-primary">StreetWorkout PRO</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#muscle-up" class="hover:text-primary transition">Muscle Up</a>
+                <a href="#front-lever" class="hover:text-primary transition">Front Lever</a>
+                <a href="#hspu" class="hover:text-primary transition">HSPU</a>
+                <a href="#back-lever" class="hover:text-primary transition">Back Lever</a>
+                <a href="#planche" class="hover:text-primary transition">Planche</a>
+            </div>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-[70vh] flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-heading mb-6 text-primary">Cesta k elite</h1>
+            <h2 class="text-3xl md:text-4xl font-heading mb-8">Street Workout progresy</h2>
+            <p class="text-xl mb-10">Postupný průvodce hlavními progresy k nejžádanějším street workout skillům. Začni svou cestu k mistrovství ještě dnes!</p>
+            <a href="#exercises" class="bg-primary hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">
+                Začni trénovat
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="exercises" class="container mx-auto px-4 py-16">
+        <!-- Muscle Up Progression -->
+        <section id="muscle-up" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-10">
+                <div class="w-16 h-1 bg-primary mr-4"></div>
+                <h2 class="text-3xl md:text-4xl font-heading">Progres k Muscle Upu</h2>
+            </div>
+            <p class="text-xl mb-12 max-w-3xl">"Od prvních přítahů až po Muscle Up – progres pro každého."</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Exercise 1 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://cdn.mos.cms.futurecdn.net/frKCUyguwNQSv93SChYU7Y.jpg" alt="Australské přítahy" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Australské přítahy</h3>
+                        <p class="text-slate-400">Základní cvik pro budování síly v přítazích s nohama na zemi.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 2 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://cdn.myshoptet.com/usr/www.fubo.cz/user/documents/upload/shyb%20s%20gumou.jpg" alt="Shyby s odporovou gumou" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Shyby s odporovou gumou</h3>
+                        <p class="text-slate-400">Pomocí gumy si usnadníte shyby a postupně budujete sílu.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 3 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://cdn.shopify.com/s/files/1/0568/6280/2107/files/progresser_aux_tractions_3d706fff-9557-4316-a3db-434ee45de3a1.jpg" alt="Shyby" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Shyby</h3>
+                        <p class="text-slate-400">Klasické shyby s vlastní vahou, základ pro muscle up.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 4 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://i0.wp.com/blog.calimove.com/wp-content/uploads/2023/04/Screenshot-944.png?resize=1200%2C675&ssl=1" alt="Shyby vysoké" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Shyby vysoké</h3>
+                        <p class="text-slate-400">Explozivní shyby s tahem tyčky pod prsa, příprava na přechod.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 5 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://cdn.vectorstock.com/i/1000v/67/89/man-doing-4-steps-of-muscle-up-on-bar-vector-52966789.jpg" alt="Muscle Up" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Muscle Up</h3>
+                        <p class="text-slate-400">Vrcholný skill kombinující shyb a dip v jednom plynulém pohybu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Front Lever Progression -->
+        <section id="front-lever" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-10">
+                <div class="w-16 h-1 bg-secondary mr-4"></div>
+                <h2 class="text-3xl md:text-4xl font-heading">Progres k Front Leveru</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Exercise 1 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=7" alt="Tuck hold" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Tuck hold</h3>
+                        <p class="text-slate-400">Základní pozice se zkříženýma nohama, budování síly v držení.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 2 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=8" alt="Advanced tuck hold" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Advanced tuck hold</h3>
+                        <p class="text-slate-400">Pokročilejší varianta s méně pokrčenýma nohama.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 3 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=9" alt="One leg front lever" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">One leg front lever</h3>
+                        <p class="text-slate-400">Jedna noha natažená, druhá pokrčená - přechod k plné verzi.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 4 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=10" alt="Straddle front lever" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Straddle front lever</h3>
+                        <p class="text-slate-400">Roznožené nohy snižují náročnost, ale připravují na full lever.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 5 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=11" alt="Full front lever" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Full front lever</h3>
+                        <p class="text-slate-400">Tělo rovnoběžně se zemí v plném natažení - vrcholový skill.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HSPU Progression -->
+        <section id="hspu" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-10">
+                <div class="w-16 h-1 bg-primary mr-4"></div>
+                <h2 class="text-3xl md:text-4xl font-heading">Progres ke Kliku ve stojce (HSPU)</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Exercise 1 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=12" alt="Pike push-ups" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Pike push-ups</h3>
+                        <p class="text-slate-400">Kliky ve stoji na rukou s pokrčenými zády, základ pro HSPU.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 2 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=13" alt="Elevated pike push-ups" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Elevated pike push-ups</h3>
+                        <p class="text-slate-400">Pike push-ups s nohama na vyvýšené ploše pro větší náročnost.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 3 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=14" alt="Wall handstand hold" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Wall handstand hold</h3>
+                        <p class="text-slate-400">Stojka u zdi - budování stability a síly v ramenou.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 4 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=15" alt="Wall handstand push-ups" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Wall handstand push-ups</h3>
+                        <p class="text-slate-400">Kliky ve stojce u zdi - finální příprava na HSPU bez opory.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 5 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=16" alt="Full Handstand Push-up" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Full Handstand Push-up</h3>
+                        <p class="text-slate-400">Klik ve stojce bez opory - vrcholový skill pro ramena a stabilitu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back Lever Progression -->
+        <section id="back-lever" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-10">
+                <div class="w-16 h-1 bg-secondary mr-4"></div>
+                <h2 class="text-3xl md:text-4xl font-heading">Progres k Back Leveru</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Exercise 1 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=17" alt="Skin the cat" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Skin the cat</h3>
+                        <p class="text-slate-400">Základní pohyb pro seznámení se s pozicí back leveru.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 2 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=18" alt="Tuck back lever" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Tuck back lever</h3>
+                        <p class="text-slate-400">Základní držení back leveru se zkříženýma nohama.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 3 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=19" alt="Advanced tuck back lever" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Advanced tuck back lever</h3>
+                        <p class="text-slate-400">Pokročilejší varianta s méně pokrčenýma nohama.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 4 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=20" alt="Straddle back lever" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Straddle back lever</h3>
+                        <p class="text-slate-400">Roznožené nohy snižují náročnost, příprava na full lever.</p>
+                    </div>
+                </div>
+                
+                <!-- Exercise 5 -->
+                <div class="exercise-card bg-slate-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/400/300?random=21" alt="Full back lever" class="w-full h-full object-cover transition duration-500" loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex">
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                                <span class="level-indicator active"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="exercise-title text-xl font-bold mb-2 transition duration-300">Full back lever</h3>
+                        <p class="text-slate-400">Tělo rovnoběž
